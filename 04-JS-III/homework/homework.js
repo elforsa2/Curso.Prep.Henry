@@ -161,7 +161,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   
- var nuevoString=n.toString();
+ var nuevoString=String(n);
  return nuevoString.charAt()==="9";
 
 }
@@ -241,16 +241,17 @@ function breakStatement(numero) {
   
   for(var i=1;i<11;i++){
 
-    nuevonum=numero+2*i;
-
-    if(nuevonum===i) break; 
+    nuevonum=numero+2;
+    
+    if(nuevonum===i) return "Se interrumpió la ejecución"; 
     
     array.push(nuevonum);
-  }
-  if(i<11){
     
-  return "Se interrumpió la ejecución";
-  }return array;
+    numero=nuevonum;
+    
+  } 
+
+   return array;
   
 }
 
