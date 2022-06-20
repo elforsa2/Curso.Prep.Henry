@@ -83,9 +83,9 @@ function tienePropiedad(objeto, propiedad) {
   // Tu código:
 
   for(let clave in objeto){
-
-    if (clave===propiedad) return true;
-  }return false;
+    
+   return clave===propiedad? true:false;    
+  }
 }
 
 function verificarPassword(usuario, password) {
